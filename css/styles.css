@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #373D3F;
+}
+
+@media only screen and (max-width: 1000px) {
+        .menu-container {
+            display: inline-block !important;
+            padding: 30px;
+        }
+        .nav-cat {
+            display: none;
+        }
+        .nav-list {
+            margin: 0 30px !important;
+        }
+    }
+
+body {
+    background-color: #f1f1f1;
+}
+
+main {
+    top: 100px;
+    position: relative;
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: block;
+    text-align: center;
+    margin: 25px 0 35px;
+    width: 90%;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
+}
+
+.section h2 {
+    display: inline-block;
+    border-bottom: 2px solid #ffdb74;
+    text-align: center;
+    padding: 15px 0 5px;
+}
+
+.section p {
+    padding: 20px;
+}
+
+.thumbs {
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.thumbs-exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb-box {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    object-fit: contain;
+    min-width: 100px;
+    padding: 15px;
+    min-height: 50px;
+    width: 33%;
+}
+
+.main-nav {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    margin: 0 80px;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list a {
+    text-align: center;
+    display: block;
+}
+
+.nav-cat {
+    padding: 10px;
+}
+
+.nav-cat:hover {
+    background-color: gainsboro;
+}
+
+.list-icon {
+    display: none;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    box-sizing: content-box;
+}
+
+.home-logo {
+    margin-right: auto;
+    text-align: center;
+    min-height: 70px;
+    padding: 20px;
+}
+
+.home-logo a {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-name {
+    border-bottom: 2px solid #ffdb74;
+    font-size: 2em;
+}
+
+.home-title {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.social-media li {
+    font-size: 2.5rem;
+    color: white;
+}
+
+svg[data-icon='mdi-linkedin']:hover > path {
+    color:white;
+}
+
+svg[data-icon='mdi-linkedin']:hover {
+    background: #0073b1;
+}
+
+svg[data-icon='mdi-twitter']:hover > path {
+    color: #1da1f2
+}
+
+.menu-container {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
