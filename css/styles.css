@@ -104,7 +104,7 @@ main {
     margin: 0 80px;
     list-style: none;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -116,6 +116,11 @@ main {
 
 .nav-cat {
     padding: 10px;
+}
+
+.nav-cat-col {
+    display: list-item;
+    flex: 0 1 100%;
 }
 
 .nav-cat:hover {
@@ -195,6 +200,7 @@ svg[data-icon='mdi-twitter']:hover > path {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+    z-index: 150;
   }
   
   /* Rotate first bar */
