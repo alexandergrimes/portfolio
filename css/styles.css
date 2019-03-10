@@ -8,15 +8,26 @@
 }
 
 @media only screen and (max-width: 1000px) {
+        main {
+            top: 40px !important;
+        }
+
         .menu-container {
             display: inline-block !important;
-            padding: 30px;
+            padding: 10px;
         }
         .nav-cat {
             display: none;
         }
         .nav-list {
             margin: 0 30px !important;
+            justify-content: space-between !important;
+        }
+        .home-logo {
+            display: none;
+        }
+        .initials {
+            display: inline-block !important;
         }
     }
 
@@ -167,6 +178,15 @@ svg[data-icon='mdi-twitter']:hover > path {
 .menu-container {
     display: none;
     cursor: pointer;
+}
+
+.initials {
+    font-size: 2em;
+    margin-right: auto;
+}
+
+.initials span {
+    color: #ffdb74;
 }
 
 .bar1, .bar2, .bar3 {
