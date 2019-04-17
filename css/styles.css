@@ -123,8 +123,8 @@ main {
     flex: 0 1 100%;
 }
 
-.nav-cat:hover {
-    background-color: gainsboro;
+.nav-cat a span:hover {
+    border-bottom: 2px solid #ffdb74;
 }
 
 .list-icon {
@@ -205,8 +205,8 @@ svg[data-icon='mdi-twitter']:hover > path {
   
   /* Rotate first bar */
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px) ;
+    transform: rotate(-45deg) translate(-8px, 7px) ;
   }
   
   /* Fade out the second bar */
@@ -219,3 +219,11 @@ svg[data-icon='mdi-twitter']:hover > path {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
+
+  /* .section:before { 
+    display: block; 
+    content: " "; 
+      height: 110px;      /* Give height of your fixed element */
+         /*  margin-top: -110px; /* Give negative margin of your fixed element */   
+         /*  visibility: hidden; 
+   } */
