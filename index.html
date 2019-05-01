@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="main-nav">
+        <div class="main-nav">
             <ul class="nav-list">
                 <li class="home-logo">
                     <a href="#">
@@ -33,7 +33,7 @@
                 </div>
                 <li class="nav-cat">
                     <a href="#about">
-                        <span onshow="">About</span>
+                        <span>About</span>
                     </a>
                 </li>
                 <li class="nav-cat">
@@ -62,85 +62,88 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
         <main>
-            <section id="about" class="section">
-                <h2>About</h2>
-                <p>
+            <div class="wrapper">
+                <section id="about" class="section">
+                    <h2>About</h2>
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia faucibus fermentum. Curabitur placerat sed ligula nec varius. Aenean in suscipit sapien. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet tortor quis metus accumsan pellentesque. Suspendisse justo lorem, malesuada nec nunc tincidunt, hendrerit finibus dolor. Sed cursus magna ex, sollicitudin laoreet nibh venenatis eget. Nulla fermentum non elit non auctor. Vestibulum sollicitudin ante felis, eget vestibulum lacus scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis vel fringilla purus, malesuada hendrerit mauris.
+                    </p>
+                </br>
+                    <p>
+                            Praesent arcu tellus, semper id mauris eu, porttitor fringilla eros. Praesent at feugiat mi, et suscipit massa. Sed egestas, mauris at faucibus hendrerit, dui neque interdum nunc, at tincidunt mi libero eget turpis. Maecenas eget eleifend quam. In eros tellus, egestas et nibh non, ultrices vestibulum massa. Vivamus nec tortor massa. Donec cursus posuere lacus ac convallis. Duis non malesuada tortor, sit amet faucibus massa. Donec at leo vel diam consectetur luctus ut non libero. Maecenas at tellus nec lorem condimentum gravida. Nam quis laoreet massa. Cras est ante, maximus vitae urna eu, gravida congue augue.
+                    </p>
+                </section>
+                <section id="education" class="section">
+                    <h2>Education</h2>
+                    <ul class="thumbs">
+                        <h1 class="thumb-box">Weber State University</h1>
+                        <li class="thumb-box">B.S. Information Systems & Technologies</li>
+                        <li class="thumb-box"> Ogden, UT / 2009 - 2015</li>
+                    </ul>
+                </section>
+                <section id="skills" class="section">
+                    <h2>Skills</h2>
+                    <ul class="thumbs">
+                        <li class="thumb-box skills">
+                            <img src="./images/CSS3.png" />
+                            <img src="./images/HTML5.png" />
+                            <img src="./images/js.png" />
+                            <img src="./images/React.png" />
+                            <img src="./images/Nodejs.png" />
+                        </li>
+                    </ul>   
+                </section>
+                <section id="experience" class="section">
+                    <h2>Experience</h2>
+                    <ul class="thumbs-exp">
+                        <li class="thumb-box experience">
+                            <h1>Defense Logistics Agency</h1>
+                            <h3>Configuration Management</h3>
+                        </li>
+                        <li class="thumb-box experience">
+                            <h1>Microsoft Store</h1>  
+                        </li>
+                    </ul> 
+                </section>
+                <section id="contact" class="section">
+                    <h2>Contact</h2>
+                    <ul class="social-media">
+                        <li class="email">
+                            <a href="#" class="tooltip bottom">
+                                <i class="iconify" data-icon="mdi-email"></i>
+                                <span class="tool-text">Copy my email address to Clipboard</span>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/AlexGrimes">
+                                <i class="iconify" data-icon="mdi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="linked-in">
+                            <a href="https://www.linkedin.com/in/alex-grimes-4a0512179/">
+                                <i class="iconify" data-icon="mdi-linkedin"></i>
+                            </a> 
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/alexandergrimes">
+                                <i class="iconify" data-icon="mdi-github-circle"></i>
+                            </a>   
+                        </li>
+                    </ul>
+                </section>
+                <section id="resume" class="section">
+                    <h2>Resume</h2>
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia faucibus fermentum. Curabitur placerat sed ligula nec varius. Aenean in suscipit sapien. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet tortor quis metus accumsan pellentesque. Suspendisse justo lorem, malesuada nec nunc tincidunt, hendrerit finibus dolor. Sed cursus magna ex, sollicitudin laoreet nibh venenatis eget. Nulla fermentum non elit non auctor. Vestibulum sollicitudin ante felis, eget vestibulum lacus scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis vel fringilla purus, malesuada hendrerit mauris.
-                </p>
-            </br>
-                <p>
+                    </p>
+                </br>
+                    <p>
                         Praesent arcu tellus, semper id mauris eu, porttitor fringilla eros. Praesent at feugiat mi, et suscipit massa. Sed egestas, mauris at faucibus hendrerit, dui neque interdum nunc, at tincidunt mi libero eget turpis. Maecenas eget eleifend quam. In eros tellus, egestas et nibh non, ultrices vestibulum massa. Vivamus nec tortor massa. Donec cursus posuere lacus ac convallis. Duis non malesuada tortor, sit amet faucibus massa. Donec at leo vel diam consectetur luctus ut non libero. Maecenas at tellus nec lorem condimentum gravida. Nam quis laoreet massa. Cras est ante, maximus vitae urna eu, gravida congue augue.
-                </p>
-            </section>
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <ul class="thumbs">
-                    <h1 class="thumb-box">Weber State University</h1>
-                    <li class="thumb-box">B.S. Information Systems & Technologies</li>
-                    <li class="thumb-box"> Ogden, UT / 2009 - 2015</li>
-                </ul>
-            </section>
-            <section id="skills" class="section">
-                <h2>Skills</h2>
-                <ul class="thumbs">
-                    <li class="thumb-box skills">
-                        <img src="./images/CSS3.png" />
-                        <img src="./images/HTML5.png" />
-                        <img src="./images/js.png" />
-                        <img src="./images/React.png" />
-                        <img src="./images/Nodejs.png" />
-                    </li>
-                </ul>   
-            </section>
-            <section id="experience" class="section">
-                <h2>Experience</h2>
-                <ul class="thumbs-exp">
-                    <li class="thumb-box experience">
-                        <h1>Configuration Management</h1>
-                        <span>Defense Logistics Agency</span>
-                    </li>
-                    <li class="thumb-box experience">
-                        <h1>Microsoft Store</h1>  
-                    </li>
-                </ul> 
-            </section>
-            <section id="contact" class="section">
-                <h2>Contact</h2>
-                <ul class="social-media">
-                    <li class="email">
-                        <a href="">
-                            <i class="iconify" data-icon="mdi-email"></i>
-                        </a>
-                    </li>
-                    <li class="twitter">
-                        <a href="https://twitter.com/AlexGrimes">
-                            <i class="iconify" data-icon="mdi-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="linked-in">
-                        <a href="https://www.linkedin.com/in/alex-grimes-4a0512179/">
-                            <i class="iconify" data-icon="mdi-linkedin"></i>
-                        </a> 
-                    </li>
-                    <li class="github">
-                        <a href="https://github.com/alexandergrimes">
-                            <i class="iconify" data-icon="mdi-github-circle"></i>
-                        </a>   
-                    </li>
-                </ul>
-            </section>
-            <section id="resume" class="section">
-                <h2>Resume</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia faucibus fermentum. Curabitur placerat sed ligula nec varius. Aenean in suscipit sapien. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet tortor quis metus accumsan pellentesque. Suspendisse justo lorem, malesuada nec nunc tincidunt, hendrerit finibus dolor. Sed cursus magna ex, sollicitudin laoreet nibh venenatis eget. Nulla fermentum non elit non auctor. Vestibulum sollicitudin ante felis, eget vestibulum lacus scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis vel fringilla purus, malesuada hendrerit mauris.
-                </p>
-            </br>
-                <p>
-                    Praesent arcu tellus, semper id mauris eu, porttitor fringilla eros. Praesent at feugiat mi, et suscipit massa. Sed egestas, mauris at faucibus hendrerit, dui neque interdum nunc, at tincidunt mi libero eget turpis. Maecenas eget eleifend quam. In eros tellus, egestas et nibh non, ultrices vestibulum massa. Vivamus nec tortor massa. Donec cursus posuere lacus ac convallis. Duis non malesuada tortor, sit amet faucibus massa. Donec at leo vel diam consectetur luctus ut non libero. Maecenas at tellus nec lorem condimentum gravida. Nam quis laoreet massa. Cras est ante, maximus vitae urna eu, gravida congue augue.
-                </p>
-            </section>
+                    </p>
+                </section>
+            </div>
         </main>
         <script src="https://code.iconify.design/1/1.0.0-rc7/iconify.min.js"></script>
         <script src="js/scripts.js" async defer></script>
