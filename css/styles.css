@@ -81,6 +81,17 @@ main {
     padding: 20px;
 }
 
+.content {
+    font-size: 2.5em;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.strikeout {
+    text-decoration: line-through;
+    white-space: pre-wrap;
+}
+
 .thumbs {
     flex-direction: column;
     list-style: none;
@@ -91,7 +102,18 @@ main {
 
 .thumbs-exp {
     display: flex;
+    padding: 50px 75px 25px;
+}
+
+.experience {
     flex-direction: column;
+    align-content: flex-start;
+    flex: 1 0 auto;
+}
+
+.exp-logo {
+    height: 3.5em;
+    width: 3em;
 }
 
 .thumb-box {
@@ -106,6 +128,8 @@ main {
     padding: 20px;
     min-height: 50px;
     width: 29%;
+    max-width: 90px;
+    max-height: 110px;
 }
 
 .main-nav {
@@ -261,6 +285,10 @@ svg[data-icon='mdi-twitter']:hover > path {
     transition: 0.4s;
     z-index: 150;
   }
+
+#contact {
+    height: 80vh;
+}
   
   /* Rotate first bar */
   .change .bar1 {
